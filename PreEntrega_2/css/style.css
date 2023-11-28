@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.7em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: auto;
+  max-width: 1300px;
+  padding: 0 20px;
+}
+
+.large {
+  font-size: 18px;
+}
+
+.display-1 {
+  font-size: 6rem;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 15px;
+  padding: 12px 23px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
+.btn-dark {
+  background: #090909;
+  border: 1px solid #273746;
+  color: #fff;
+}
+
+form label {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+form .form-group {
+  margin-bottom: 16px;
+}
+form .form-group-control {
+  width: 100%;
+  padding: 7px 12px;
+  font-size: 1rem;
+  line-height: 1.5;
+  background: #f9f9f9;
+  border: none;
+  border-radius: 4px;
+}
+form button {
+  width: 100%;
+}
+
+
+#navbar {
+  height: 12vh;
+  background: #131313;
+  color: #fff;
+  overflow: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#navbar a {
+  color: #fff;
+}
+#navbar .logo {
+  float: left;
+  padding-top: 16px;
+  font-size: 25px;
+}
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+#navbar ul li {
+  float: left;
+}
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+#showcase {
+  height: 88vh;
+  padding: 120px 0;
+  background: url("../img/robot.gif");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+#showcase h1 {
+  width: 50%;
+}
+#showcase p {
+  width: 50%;
+  padding: 15px 0;
+  color: #fff;
+}
+
+#showcase2 {
+  height: 88vh;
+  padding: 120px 0;
+  background: url("../img/atlas-robot.gif");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+#showcase3 {
+  height: 88vh;
+  padding: 120px 0;
+  background: url("../img/projects.webp");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+#showcase4 {
+  height: 88vh;
+  padding: 120px 0;
+  background: url("../img/education_img.jpeg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  color: white;
+}
+
+#showcase5 {
+  height: 88vh;
+  padding: 120px 0;
+  background: url("../img/atlas_about.webp");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  color: white;
+}
+
+#about {
+  padding: 100px 0;
+}
+#about h2 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+#about img {
+  width: 100%;
+  float: right;
+}
+#about .about-flex {
+  display: flex;
+}
+#about .about-flex-image {
+  flex: 1;
+  float: left;
+}
+#about .about-flex-description {
+  flex: 1;
+  padding: 20px 40px;
+}
+
+#services {
+  padding: 100px 0;
+  background: #f9f9f9;
+}
+#services h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+#services p.large {
+  text-align: center;
+  padding-bottom: 50px;
+}
+#services .services-flex {
+  display: flex;
+  gap: 10px;
+}
+#services .services-flex img {
+  height: 40px;
+}
+#services .services-flex-box {
+  background: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+#services .services-flex-box h4 {
+  padding: 10px 0;
+}
+
+#contact {
+  padding: 100px 0;
+  background-color: #080808;
+}
+#contact h2 {
+  text-align: center;
+  padding-bottom: 10px;
+  color: #fff;
+}
+#contact p.large {
+  text-align: center;
+  padding-bottom: 50px;
+  color: white;
+}
+#contact form {
+  width: 50%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+#mainfooter {
+  background: #080808;
+  text-align: center;
+  padding: 30px;
+}
+
+@media (max-width: 700px) {
+  .display-1 {
+    font-size: 4rem;
+  }
+  /* Navbar */
+  #navbar {
+    height: 100%;
+  }
+  #navbar .logo {
+    float: none;
+    text-align: center;
+  }
+  #showcase {
+    height: 100%;
+    padding: 50px 0;
+  }
+  #about {
+    padding: 50px 0;
+  }
+  #about .about-flex {
+    flex-direction: column;
+  }
+  #about .about-flex-description {
+    text-align: center;
+    padding: 20px 0;
+  }
+  #services {
+    padding: 50px 0;
+  }
+  #services .services-flex {
+    flex-direction: column;
+  }
+  #contact {
+    padding: 80px 0;
+  }
+  #contact form {
+    width: 100%;
+  }
+}
+
+/* ... (tu CSS existente) ... */
+
+/* Estilos para el menú desplegable en dispositivos móviles */
+.menu-icon {
+  display: none; /* Oculta el ícono del menú en pantallas más grandes */
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+  padding: 10px;
+}
+
+#navbar {
+  /* Resto de tus estilos para el navbar */
+  position: relative; /* Añade posición relativa para el menú desplegable */
+}
+
+#menuItems {
+  /* Resto de tus estilos para los items del menú */
+  display: flex;
+  justify-content: center; /* Centra los elementos del menú */
+}
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Muestra el ícono del menú en pantallas más pequeñas */
+  }
+
+  #navbar ul {
+    display: none; /* Oculta los elementos del menú en pantallas más pequeñas */
+    position: absolute;
+    top: 100%; /* Ajusta la posición del menú desplegable */
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1;
+    text-align: center;
+  }
+
+  #navbar ul.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #navbar ul li {
+    float: none;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+
+
+
+
